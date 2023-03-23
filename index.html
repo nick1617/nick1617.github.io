@@ -2,24 +2,13 @@
 
 <html>
   <head>
-    <style>
-		body {
-			background: linear-gradient(to bottom, #3366cc, #33cc99);
-			animation: gradient 10s ease infinite;
-		}
-
-		@keyframes gradient {
-			0% {
-				background-position: 0% 0%;
-			}
-			50% {
-				background-position: 100% 100%;
-			}
-			100% {
-				background-position: 0% 0%;
-			}
-		}
-	</style>
+    <link rel="stylesheet" type="text/css" href="particles.css">
+	<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript">
+		particlesJS.load('particles-js', 'particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>
   </head>
 
 
