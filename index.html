@@ -4,7 +4,20 @@
   <head>
     <style>
 		body {
-			background-color: lightblue;
+			background: linear-gradient(to bottom, #3366cc, #33cc99);
+			animation: gradient 10s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 0%;
+			}
+			50% {
+				background-position: 100% 100%;
+			}
+			100% {
+				background-position: 0% 0%;
+			}
 		}
 	</style>
   </head>
