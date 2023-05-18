@@ -1,11 +1,11 @@
 h1{
     color: yellow;
-    font-size: 300px;
+    font-size: 100px;
 }
 
 p{
     color: wheat;
-    font-size: 100px;
+    font-size: 50px;
 }
 .b-video{
     width: auto;
@@ -29,7 +29,8 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh; 
+    
 }
 
 .my_img{
