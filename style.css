@@ -1,10 +1,10 @@
 h1{
-    color: yellow;
+    color: rgb(218, 162, 60);
     font-size: 100px;
 }
 
 p{
-    color: wheat;
+    color: azure;
     font-size: 50px;
 }
 .b-video{
@@ -17,6 +17,9 @@ p{
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+a{
+    color:lime;
 }
 
 video{
