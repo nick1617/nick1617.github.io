@@ -11,12 +11,12 @@ a{
 
 body{
     padding: 0;
-        margin: 0;
-        font-family: Raleway, sans-serif;
-        scroll-behavior: smooth !important;
-        overflow-x: hidden;
-        overflow-y: visible;
-        background-color: #0e192d;
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+    verflow-y: visible;
+    background-color: #0e192d;
 }
 
  
