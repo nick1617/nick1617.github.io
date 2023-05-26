@@ -13,6 +13,7 @@ a{
 
 body{
     padding: 0;
+<<<<<<< HEAD
         margin: 0;
         font-family: Raleway, sans-serif;
         scroll-behavior: smooth !important;
@@ -20,6 +21,14 @@ body{
         overflow-y: visible;
         background-color: #0e192d;
         font-family: 'Roboto Mono', monospace;
+=======
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+    verflow-y: visible;
+    background-color: #0e192d;
+>>>>>>> ddc4f6fa3a0b1175fc67bdb5964d5195abcd2a08
 }
 
  
@@ -152,6 +161,7 @@ body{
     font-size: 30px;
     font-weight: 300;
 }
+<<<<<<< HEAD
 .nav li{
     border: 2px solid #0e192d;
     padding: 1em 2em;
@@ -165,3 +175,5 @@ body{
     box-shadow: 0 0.5em 0.5em -0.4em yellowgreen;
     transform: translateY(-0.25em);
 }
+=======
+>>>>>>> ddc4f6fa3a0b1175fc67bdb5964d5195abcd2a08
