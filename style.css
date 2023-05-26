@@ -1,12 +1,14 @@
 h1{
     color: rgb(218, 162, 60);
     font-size: 50px;
+    font-weight: 700;
 }
 
 
 
 a{
     color:rgba(0, 255, 191, 0.849);
+    text-decoration: none;
 }
 
 body{
@@ -17,6 +19,7 @@ body{
         overflow-x: hidden;
         overflow-y: visible;
         background-color: #0e192d;
+        font-family: 'Roboto Mono', monospace;
 }
 
  
@@ -148,4 +151,17 @@ body{
 #example{
     font-size: 30px;
     font-weight: 300;
+}
+.nav li{
+    border: 2px solid #0e192d;
+    padding: 1em 2em;
+    transition: all 0.25s;
+    
+}
+.nav li:hover{
+    border-color: yellowgreen;
+    color: white;
+    border-radius: 25%;
+    box-shadow: 0 0.5em 0.5em -0.4em yellowgreen;
+    transform: translateY(-0.25em);
 }
