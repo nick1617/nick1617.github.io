@@ -1,176 +1,182 @@
-h1{
-    color: rgb(218, 162, 60);
-    font-size: 50px;
-    font-weight: 700;
-}
+/* ***************************************************** */
 
+/* Universal Style for the whole page */
 
+/* ***************************************************** */
 
-a{
-    color:rgba(0, 255, 191, 0.849);
-    text-decoration: none;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    padding: 0;
-<<<<<<< HEAD
-        margin: 0;
-        font-family: Raleway, sans-serif;
-        scroll-behavior: smooth !important;
-        overflow-x: hidden;
-        overflow-y: visible;
-        background-color: #0e192d;
-        font-family: 'Roboto Mono', monospace;
-=======
-    margin: 0;
-    font-family: Raleway, sans-serif;
-    scroll-behavior: smooth !important;
-    overflow-x: hidden;
-    verflow-y: visible;
-    background-color: #0e192d;
->>>>>>> ddc4f6fa3a0b1175fc67bdb5964d5195abcd2a08
+    background-color: #010127;
+    color: rgb(240, 238, 236);
+    font-family: 'Poppins', sans-serif;
+}    
+
+/* ***************************************************** */
+
+/* Top Nav bar */
+
+/* ***************************************************** */
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(2, 2, 48);
 }
 
- 
-
-.my_img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-right: 100px;
+nav ul{
+    display: flex;
+    justify-content: center;
 }
-.my_img #img{
-    width: 100%;
-    height: 100%;
+nav ul li{
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(240, 238, 236);
+}
+
+nav ul li a:hover{
+    color: rgb(178, 178, 248);
+    font-size: 1.4rem;
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(111, 111, 199) ;
+}
+
+.left a{
+    color: rgb(240, 238, 236);
+    text-decoration: none;
+    font-size: 2rem; 
+    
+}
+main hr{
+    border: 0;
+        background: #9c97f1;
+        height: 2px;
+        margin: 2em 6em;
+}
+
+
+/* ***************************************************** */
+
+/* Intro section with Profile pic */
+
+/* ***************************************************** */
+
+.firstSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% auto;
+    margin-bottom: 0%;
+    max-width: 85%;
+
+}
+
+
+
+.firstSection #together{
+    display: inline;
+}
+
+.rightSection{
+    width: 60%;
+    font-size: 3rem;
+    
+      
+}
+.leftSection{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+.leftSection img{
+    width: 40%;
     border-radius: 50%;
     
-
-}
-#about{
-    height: auto;
-    width: auto;
+    
 }
 
-#about p{
-    color: rgb(0, 255, 242);
+.purple{
+    color: rgb(153, 80, 221);
+}
+#element{
+    color: rgb(153, 80, 221);
 }
 
-.content {
+/* ***************************************************** */
+
+/* Under intro , links for the instant contact access */
+
+/* ***************************************************** */
+
+
+
+.secondSection{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#top_part {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-}
-
-#nav_name h1{
-    margin: 20px;
-}
-
-.nav ul{
-    list-style-type: none;
-    margin: 20px;
-    padding: 0;
-    display: flex;
-    gap: 50px;
-    font-size: 30px;
-}
-
-.terminal{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 600px;
-}
-
-.terminal_container{
-    height: 500px;
-    width: 600px;
-    background-color: black;
-    margin: 100px;
-    border-radius: 2%;
+    margin: 2% auto;
+    height: 20%;
+    width: 25%;
     
-
-}
-
-.terminal_container ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 5px;
-}
-
-.terminal_container #top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     
-    height: 40px;
+}
+
+.secondSection div {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    background-color: white;
-    
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.terminal #top p{
-    margin: 0;
-    margin-left: 20px;
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 400;
-    font-size: 25px;
 }
 
-#top #minimise{
-    height: 20px;
+
+.secondSection ul {
     display: flex;
-    width: 20px;
-    background-color: green;
-    border-radius: 50%;
+    justify-content: space-evenly;
+    width: 100%;
 }
-#top #full_screen {
-    height: 20px;
+
+.secondSection ul li{
     display: flex;
-    width: 20px;
-    background-color: orange;
-    border-radius: 50%;
-}
-#top #close_button {
-    height: 20px;
+    align-content: space-evenly;
+    list-style: none;
+    
+} 
+
+.secondSection ul li a{
     display: flex;
-    width: 20px;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-#bottom{
-    margin-left: 10px;
-}
-.terminal_container #bottom #bottom_content{
-    font-weight: 200;
-    color: rgb(245, 92, 245);
-    font-size: 25px;
-}
-#example{
-    font-size: 30px;
-    font-weight: 300;
-}
-.nav li{
-    border: 2px solid #0e192d;
-    padding: 1em 2em;
-    transition: all 0.25s;
+    justify-content: center;
+    align-items: center;
     
 }
-.nav li:hover{
-    border-color: yellowgreen;
-    color: white;
-    border-radius: 25%;
-    box-shadow: 0 0.5em 0.5em -0.4em yellowgreen;
-    transform: translateY(-0.25em);
+
+.secondSection ul li img{
+    width: 50px;
+    transition: all 0.5s ease-in-out;
 }
+
+.secondSection ul li img:hover{
+    width: 70px;
+    transform: rotate(360deg);
+    
+}
+
+/* ***************************************************** */
+
+/* Education Section "Third Section" */
+
+/* ***************************************************** */
+
+
+

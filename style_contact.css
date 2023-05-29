@@ -1,0 +1,127 @@
+/* ***************************************************** */
+
+/* Universal Style for the whole page */
+
+/* ***************************************************** */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010127;
+    color: rgb(240, 238, 236);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ***************************************************** */
+
+/* Top Nav bar */
+
+/* ***************************************************** */
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(2, 2, 48);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(240, 238, 236);
+}
+
+nav ul li a:hover {
+    color: rgb(178, 178, 248);
+    font-size: 1.4rem;
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(111, 111, 199);
+}
+
+.left a {
+    color: rgb(240, 238, 236);
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+
+
+/* **************************************************** */
+
+/* Details for contact me */
+
+/* **************************************************** */
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 auto;
+    width: 65%;
+    height: 600px;
+    
+}
+
+
+.contactMe ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.contactMe ul li {
+    display: flex;
+    
+    align-items: center;
+    width: 42%;
+    list-style: none;
+}
+.contactMe ul li a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(240, 238, 236);
+    
+}
+.contactMe ul li span{
+    padding-left: 20px;
+    font-size: 1rem;  
+    
+    transition: all 0.5s ;
+}
+
+
+
+
+.contactMe ul li img {
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contactMe ul li img:hover {
+    width: 70px;
+    transform: rotate(360deg);
+}
+
+.contactMe ul li span:hover{
+    font-size: 1.2rem;
+    color: rgb(153, 80, 221);
+}

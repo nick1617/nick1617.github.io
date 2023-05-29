@@ -1,75 +1,93 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nisarg Patel</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
+    <!-- NAV bar on top -->
     <header>
-      <div id="top_part">
-        <div id="nav_name"><h1>Nisarg Patel</h1></div>
-        <nav class="nav">
+      <nav>
+        <div class="left"><a href="index.html"> Nisarg's Portfolio </a></div>
+        <div class="right">
           <ul>
-            <li><a href="#example">Home</a></li>
-            <li><a href="#example">about</a></li>
-            <li><a href="#example">portfolio</a></li>
-            <li><a href="#example">contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Resume</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
-    <section class="intro">
-      <div class="main_container">
-        <div class="content">
-          <div class="my_img">
-            <img src="profile_pic.jpg" id="img" />
-          </div>
-          <div id="about">
-            <h1>Welcome to my world of Inovation!!</h1>
-            <p>My name is Nisarg Patel</p>
-            <p>I am a computer engineer</p>
-
-            <p>
-              You can checkout my
-              <a
-                href="https://www.linkedin.com/in/nisargpate/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Linkedin</a
-              >
-
-              Profile here!
-            </p>
-          </div>
+    <main>
+      <!-- Quick Intro Section with Quick contact icons/links.  -->
+      <!-- First and Second section together make the intro section -->
+      <section class="firstSection">
+        <div class="leftSection">
+          <img src="pictures/profile_pic1.png" alt="" />
         </div>
-      </div>
-    </section>
+        <div class="rightSection">
+          Hi, My name is <span class="purple"> Nisarg </span>
+          <div id="together">and</div>
+          <span id="element"></span>
+        </div>
+      </section>
 
-    <section class="terminal">
-      <div class="terminal_container">
-        <div id="top">
-          <p>Nisarg's Terminal</p>
-          <ul id="terminal_options">
-            <li id="minimise"></li>
-            <li id="full_screen"></li>
-            <li id="close_button"></li>
+      <section class="secondSection">
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/nisargpate/"
+                ><img src="pictures/LinkedIn.png" alt="Linkedin" class="links"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/nisarg3322"
+                ><img src="pictures/github.png" alt="Github" class="links"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:patelnisarg.3322@gmail.com"
+                ><img
+                  src="pictures/email.png"
+                  alt="Email"
+                  class="links"
+                  id="gmail"
+                />
+              </a>
+            </li>
           </ul>
         </div>
-        <div id="bottom">
-          <p id="bottom_content">nisarg3322-AsusTuf: cd portfolio</p>
-          <p id="bottom_content">I am a Computer engineer</p>
-          <p id="bottom_content"></p>
-        </div>
-      </div>
-    </section>
-    <div id="example"><p>example</p></div>
+      </section>
+      <hr />
+
+      <!-- Third Section About Education -->
+
+      <section class="thirdSection"></section>
+    </main>
+
+    <!-- typed scipt imported from github repo -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Welcome to my Portfolio.",
+          "I am a passionate Computer engineer.",
+          "Transforming Ideas into Tech.",
+        ],
+        typeSpeed: 70,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
