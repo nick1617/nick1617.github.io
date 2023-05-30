@@ -227,7 +227,7 @@ main hr {
 .fourthSection {
   max-width: 80vw;
   margin: 5% auto;
-  height: 400px;
+  height: 500px;
 }
 
 .fourthSection .heading {
@@ -239,27 +239,38 @@ main hr {
 }
 .fourthSection .educationBox {
   margin: 0 auto;
-  height: 80%;
+  height: 100%;
   width: 95%;
+}
+.fourthSection .uottawa {
+  height: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fourthSection .cambrian {
+  height: 40%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .fourthSection .uniAndDate {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 18%;
+  height: 24%;
   align-items: center;
 }
 .fourthSection .courseName {
   width: 100%;
-  height: 12%;
+  height: 16%;
   display: flex;
   align-items: center;
   margin-top: 0;
 }
 
 .fourthSection .uniDetails {
-  height: 45%;
+  height: 60%;
   width: 95%;
   margin: 0 auto;
 }
