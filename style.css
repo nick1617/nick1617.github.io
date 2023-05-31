@@ -3,10 +3,16 @@
 /* Universal Style for the whole page */
 
 /* ***************************************************** */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -46,6 +52,7 @@ nav ul li {
   list-style: none;
   font-size: 1.25rem;
   margin: 0 23px;
+  z-index: 1;
 }
 
 nav ul li a {
@@ -94,11 +101,13 @@ main hr {
 .rightSection {
   width: 60%;
   font-size: 3rem;
+  z-index: 1;
 }
 .leftSection {
   display: flex;
   justify-content: center;
   width: 40%;
+  z-index: 1;
 }
 
 .leftSection img {
@@ -133,6 +142,7 @@ main hr {
   justify-content: space-evenly;
   width: 60%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .secondSection .buttons {
@@ -140,6 +150,7 @@ main hr {
   justify-content: center;
   width: 40%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .secondSection .buttons button {
