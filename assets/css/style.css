@@ -1,0 +1,308 @@
+/* ***************************************************** */
+
+/* Universal Style for the whole page */
+
+/* ***************************************************** */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  padding: 0 20px;
+  font-size: 1.9rem;
+  text-decoration: underline;
+  text-decoration-color: #9c97f1;
+  padding-bottom: 3px;
+  text-decoration-thickness: 2px;
+}
+
+/* ***************************************************** */
+
+/* Top Nav bar */
+
+/* ***************************************************** */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 0 23px;
+  z-index: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: rgb(178, 178, 248);
+  font-size: 1.4rem;
+  transform: translateY(-0.2em);
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(111, 111, 199);
+}
+
+.left a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 2px;
+  margin: 2em 6em;
+}
+
+/* ***************************************************** */
+
+/* Intro section with Profile pic */
+
+/* ***************************************************** */
+
+.firstSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10% auto;
+  margin-bottom: 0%;
+  max-width: 85%;
+}
+
+.firstSection #together {
+  display: inline;
+}
+
+.rightSection {
+  width: 60%;
+  font-size: 3rem;
+  z-index: 1;
+  color: black;
+}
+.leftSection {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  z-index: 1;
+  
+}
+
+.leftSection img {
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 117, 250, 0.3);
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.leftSection img:hover{
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.purple {
+  color: rgb(153, 80, 221);
+}
+#element {
+  color: rgb(153, 80, 221);
+}
+
+/* ***************************************************** */
+
+/* Under intro , links for the instant contact access */
+
+/* ***************************************************** */
+
+.secondSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% auto 6% auto;
+  height: 20%;
+  max-width: 85%;
+}
+
+.secondSection .quick-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.secondSection .buttons {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.secondSection .buttons button {
+  color: #f7f7f7;
+  border-radius: 10px;
+  background-color: rgba(111, 66, 184, 0.925);
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondSection .buttons button:hover {
+  padding: 15px;
+}
+
+.secondSection ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 30% 0 20%;
+}
+
+.secondSection ul li {
+  display: flex;
+  align-content: space-evenly;
+  list-style: none;
+}
+
+.secondSection ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondSection ul li img {
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.secondSection ul li img:hover {
+  width: 70px;
+  transform: rotate(360deg);
+}
+
+/* ***************************************************** */
+
+/* Skills Section "Third Section" */
+
+/* ***************************************************** */
+
+.thirdSection {
+  height: 60vh;
+  width: 80vw;
+  margin: 5% auto;
+}
+.thirdSection .heading {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.thirdSection .skillsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.thirdSection .leftArea {
+  background-color: red;
+}
+.thirdSection .rightArea {
+  background-color: aqua;
+  width: 50%;
+}
+
+/* ***************************************************** */
+
+/* Education Section "Fourth Section" */
+
+/* ***************************************************** */
+
+.fourthSection {
+  max-width: 80vw;
+  margin: 5% auto;
+  height: 500px;
+}
+
+.fourthSection .heading {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.fourthSection .educationBox {
+  margin: 0 auto;
+  height: 100%;
+  width: 95%;
+}
+.fourthSection .uottawa {
+  height: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fourthSection .cambrian {
+  height: 40%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fourthSection .uniAndDate {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 24%;
+  align-items: center;
+}
+.fourthSection .courseName {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.fourthSection .uniDetails {
+  height: 60%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.fourthSection .courseDetails li {
+  margin: 3px 0;
+}
