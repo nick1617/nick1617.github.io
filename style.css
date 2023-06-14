@@ -16,8 +16,8 @@
 }
 
 body {
-  background-color: #010127;
-  color: rgb(240, 238, 236);
+  background-color: #f7f7f7;
+  color: #000000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,8 +40,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 120px;
-  background-color: rgb(2, 2, 48);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  
 }
 
 nav ul {
@@ -57,7 +63,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(240, 238, 236);
+  color: black;
 }
 
 nav ul li a:hover {
@@ -68,7 +74,7 @@ nav ul li a:hover {
 }
 
 .left a {
-  color: rgb(240, 238, 236);
+  color: black;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -89,7 +95,7 @@ main hr {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5% auto;
+  margin: 10% auto;
   margin-bottom: 0%;
   max-width: 85%;
 }
@@ -102,17 +108,28 @@ main hr {
   width: 60%;
   font-size: 3rem;
   z-index: 1;
+  color: black;
 }
 .leftSection {
   display: flex;
   justify-content: center;
   width: 40%;
   z-index: 1;
+  
 }
 
 .leftSection img {
   width: 40%;
   border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 117, 250, 0.3);
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.leftSection img:hover{
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .purple {
@@ -154,9 +171,9 @@ main hr {
 }
 
 .secondSection .buttons button {
-  color: #010127;
+  color: #f7f7f7;
   border-radius: 10px;
-  background-color: rgb(240, 238, 236);
+  background-color: rgba(111, 66, 184, 0.925);
   padding: 12px;
   cursor: pointer;
   font-weight: 600;
