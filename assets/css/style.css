@@ -254,13 +254,13 @@ main hr {
   width: 95%;
 }
 .fourthSection .uottawa {
-  height: 60%;
+  min-height: 60%;
   width: 100%;
   margin: 0 auto;
 }
 
 .fourthSection .cambrian {
-  height: 40%;
+  min-height: 40%;
   width: 100%;
   margin: 0 auto;
 }
@@ -269,12 +269,12 @@ main hr {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 24%;
+  min-height: 24%;
   align-items: center;
 }
 .fourthSection .courseName {
   width: 100%;
-  height: 16%;
+  min-height: 16%;
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -282,7 +282,7 @@ main hr {
 
 .fourthSection .uniDetails {
   height: 60%;
-  width: 95%;
+  min-width: 95%;
   margin: 0 auto;
 }
 
