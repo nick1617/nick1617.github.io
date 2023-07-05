@@ -434,4 +434,33 @@ header ul li a:hover {
     text-transform: none;
 }
 
+@media (max-width: 1060px){
+    .about .container{
+        flex-direction: column; 
+        align-items: center;
+
+    }
+
+    .about .container .image{
+        width: 80%;
+        margin-bottom: 3em;
+        
+    }
+    .about .container .content{
+        width: 80%;
+    }
+}
+@media (max-width:500px){
+    
+    
+    .about .container .content p{
+        font-size: 0.9em;
+    }
+    .about .container .image,
+    .about .container .content{
+        width: 100%;
+    }
+
+}
+
 
