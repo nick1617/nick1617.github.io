@@ -1,291 +1,437 @@
-/* ***************************************************** */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
-/* Universal Style for the whole page */
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
 
-/* ***************************************************** */
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: #010127;
-  color: rgb(240, 238, 236);
-  font-family: "Poppins", sans-serif;
+    background-color: #F7F7F7;
+    font-family: 'ubuntu', sans-serif;
 }
 
-h1 {
-  padding: 0 20px;
-  font-size: 1.9rem;
-  text-decoration: underline;
-  text-decoration-color: #9c97f1;
-  padding-bottom: 3px;
-  text-decoration-thickness: 2px;
+
+
+*::selection {
+    background: #2b3dda;
+    color: #fff;
 }
 
-/* ***************************************************** */
-
-/* Top Nav bar */
-
-/* ***************************************************** */
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 120px;
-  background-color: rgb(2, 2, 48);
+html::-webkit-scrollbar {
+    width: 0.8rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  list-style: none;
-  font-size: 1.25rem;
-  margin: 0 23px;
-  z-index: 1;
+html::-webkit-scrollbar-track {
+    background: rgb(235, 202, 245);
 }
 
-nav ul li a {
+html::-webkit-scrollbar-thumb {
+    background: #420177;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+    
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+    
+}
+
+.heading span {
+    color: rgb(115, 3, 167);
+}
+
+/* Navbar starts */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70px;
+    padding: 0 10%;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+header .logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0e2431;
+}
+
+header .logo:hover {
+    color: orange;
+}
+
+header .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+header ul li a {
+
+    font-weight: 600;
+    text-decoration: none;
+    color: #0e2431;
+    letter-spacing: 0.04rem;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    color: #011aff;
+
+    border-bottom: 0.15rem solid #011aff;
+    padding: 6px 0;
+}
+
+/* navbar ends */
+
+/* hamburger icon starts */
+
+#menu {
+    color: #0e2431;
+    cursor: pointer;
+    display: none;
+    font-size: 2.3em;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width:812px) {
+    #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        left: 100vw;
+        width: 80vw;
+        height: 100vh;
+        top: 10vh;
+        
+        background-color: #0e0f31;
+
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 4vh;
+
+    }
+
+    header .navbar ul li {
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 6px;
+    }
+
+    header .navbar ul li a {
+        width: 200px;
+
+        color: #F7F7F7;
+        font-size: 1.6rem;
+    }
+
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+       
+
+        border-bottom: 0.25rem solid #011aff;
+        border-radius: 3%;
+        padding: 6px 0;
+    }
+    .fa-times{
+        transform: rotate3d(1,1,1,360deg);
+    }
+    header .navbar.nav-toggle{
+        left: 20vw;
+    }
+}
+
+/* hamburger ends */
+
+/* hero section starts */
+
+.home{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    
+   
+}
+.home #particles-js{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home .content{
+    width: 50%;
+    height: 100%;
+    
+}
+/* hero page - image start */
+.home .image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.home .image img{
+    
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background: #F7F7F7;
+}
+.home .image img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+/* left side content including h2 and typed js */
+
+.home .content h2{
+    font-size: 3.5em;
+    color: #002057;
+    margin-bottom: 0.3em;
+    z-index: 1;
+}
+.home .content h2 span{
+    color: #ff7b00;
+    z-index: 1;
+    
+}
+
+.home .content p{
+    color: 000;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1.6em;
+    z-index: 1;
+}
+
+.home .content p span{
+    color: #940808;
+    z-index: 1;
+}
+
+/* Btn of about me */
+
+.home .btn{
+    padding: 1.1em 2.5em;
+    background-color: #2506ad;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+    color: #fff;
+    border-radius: 4em;
+    text-decoration: none;
+    z-index: 10;
+    position: relative;
+}
+
+.home .btn i{
+    margin-left: 0.3em;
+    transition: 0.3s;
+}
+.home .btn span{
+    letter-spacing: 0.1em;
+    
+}
+.home .btn:hover{
+    background: #1a047e;
+    
+}
+
+/* social links */
+.home .content .socials ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    
+}
+.home .content ul li{
+    z-index: 1;
+    height: 2.7em;
+    width: 2.7em;
+    
+    margin-top: 2.5em;
+    
+}
+.home .content ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    color: #00d9ff;
+    border-radius: 50%;
+    background-color: #0e0f31;
+    text-decoration: none;
+}
+
+.home .content ul li a:hover{
+    color: #fff;
+    background-color: #0685da;
+}
+.content .socials .social-icons .instagram:hover{
+    background-color: #ee00da;
+}
+
+
+@media (max-width: 1060px){
+    .home{
+        flex-direction: column;
+        
+    }
+    .home .content h2{
+        font-size:2.5em ;
+    }
+    .home .content p{
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+    .home .content{
+        margin-top: 10vh;
+        width: 80vw;
+    }
+    .home .image img{
+        height: 400px;
+        width: 400px;
+        margin-top: 1.5em;
+    }
+}
+@media (max-width: 500px){
+    .home .image img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+/* About Me section starts */
+
+.about{
+    background-color: #fff;
+}
+
+/* about section starts */
+.heading{
+    margin-bottom: 10vh;
+}
+.about .container{
+    max-width: 100% ;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about .image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .content{
+    width: 50%;
+    height: 100%;
+}
+.about .image img{
+    height: 65%;
+    width: 50%;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.about .container .btn{
+    padding: 1.5em 3.2em;
+  border-radius: 0.5em;
+  transition: 0.2s;
+  color: #fff;
+  background: #2506ad;
+  font-size: 1.1em;
   text-decoration: none;
-  color: rgb(240, 238, 236);
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
 }
 
-nav ul li a:hover {
-  color: rgb(178, 178, 248);
-  font-size: 1.4rem;
-  transform: translateY(-0.2em);
-  box-shadow: 0 0.5em 0.5em -0.4em rgb(111, 111, 199);
+.about .container .btn span:hover{
+    font-size: 1.5em;
+ 
 }
 
-.left a {
-  color: rgb(240, 238, 236);
-  text-decoration: none;
-  font-size: 2rem;
-}
-main hr {
-  border: 0;
-  background: #9c97f1;
-  height: 2px;
-  margin: 2em 6em;
+.about .container h3{
+    font-size: 1.6em;
+
+    color: rgb(27, 27, 27);
+    margin-bottom: 5px;
 }
 
-/* ***************************************************** */
-
-/* Intro section with Profile pic */
-
-/* ***************************************************** */
-
-.firstSection {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 5% auto;
-  margin-bottom: 0%;
-  max-width: 85%;
+.about .container h4{
+    font-size: 1em;
+    color: rgb(27, 27, 27);
+    margin-bottom: 17px;
 }
 
-.firstSection #together {
-  display: inline;
+.about .content .details ,p{
+    margin-bottom: 17px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: none;
+}
+.about .content .details span{
+    color:#940808;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.about .container #last{
+    margin-bottom: 35px;
 }
 
-.rightSection {
-  width: 60%;
-  font-size: 3rem;
-  z-index: 1;
-}
-.leftSection {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  z-index: 1;
-}
 
-.leftSection img {
-  width: 40%;
-  border-radius: 50%;
+.about .content .box-container .box p span{
+    color: #011aff;   
+}
+.about .content .box-container #email{
+    text-decoration: none;
+    color:#940808;
+    font-weight: 600;
+    text-transform: none;
 }
 
-.purple {
-  color: rgb(153, 80, 221);
-}
-#element {
-  color: rgb(153, 80, 221);
-}
 
-/* ***************************************************** */
-
-/* Under intro , links for the instant contact access */
-
-/* ***************************************************** */
-
-.secondSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4% auto 6% auto;
-  height: 20%;
-  max-width: 85%;
-}
-
-.secondSection .quick-links {
-  display: flex;
-  justify-content: space-evenly;
-  width: 60%;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.secondSection .buttons {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.secondSection .buttons button {
-  color: #010127;
-  border-radius: 10px;
-  background-color: rgb(240, 238, 236);
-  padding: 12px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.secondSection .buttons button:hover {
-  padding: 15px;
-}
-
-.secondSection ul {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 0 30% 0 20%;
-}
-
-.secondSection ul li {
-  display: flex;
-  align-content: space-evenly;
-  list-style: none;
-}
-
-.secondSection ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.secondSection ul li img {
-  width: 50px;
-  transition: all 0.5s ease-in-out;
-}
-
-.secondSection ul li img:hover {
-  width: 70px;
-  transform: rotate(360deg);
-}
-
-/* ***************************************************** */
-
-/* Skills Section "Third Section" */
-
-/* ***************************************************** */
-
-.thirdSection {
-  height: 60vh;
-  width: 80vw;
-  margin: 5% auto;
-}
-.thirdSection .heading {
-  display: flex;
-  align-items: center;
-  height: 10%;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.thirdSection .skillsContainer {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
-}
-
-.thirdSection .leftArea {
-  background-color: red;
-}
-.thirdSection .rightArea {
-  background-color: aqua;
-  width: 50%;
-}
-
-/* ***************************************************** */
-
-/* Education Section "Fourth Section" */
-
-/* ***************************************************** */
-
-.fourthSection {
-  max-width: 80vw;
-  margin: 5% auto;
-  height: 500px;
-}
-
-.fourthSection .heading {
-  display: flex;
-  align-items: center;
-  height: 10%;
-  width: 100%;
-  margin-bottom: 40px;
-}
-.fourthSection .educationBox {
-  margin: 0 auto;
-  height: 100%;
-  width: 95%;
-}
-.fourthSection .uottawa {
-  min-height: 60%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.fourthSection .cambrian {
-  min-height: 40%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.fourthSection .uniAndDate {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 24%;
-  align-items: center;
-}
-.fourthSection .courseName {
-  width: 100%;
-  min-height: 16%;
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-}
-
-.fourthSection .uniDetails {
-  height: 60%;
-  min-width: 95%;
-  margin: 0 auto;
-}
-
-.fourthSection .courseDetails li {
-  margin: 3px 0;
-}

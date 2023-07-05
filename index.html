@@ -2,185 +2,201 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nisarg Patel</title>
+    <title>Nisarg's Portfolio</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custome css file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <div id="particles-js"></div>
-    <!-- NAV bar on top -->
+    <!-- Navigation bar -->
+
     <header>
-      <nav>
-        <div class="left"><a href="index.html"> Nisarg's Portfolio </a></div>
-        <div class="right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Resume</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="assets/HTML/contact_me.html">Contact Me</a></li>
-          </ul>
-        </div>
+      <a href="/" class="logo">Nisarg Patel</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Contact">Contact Me</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <!-- Quick Intro Section with Quick contact icons/links.  -->
-      <!-- First and Second section together make the intro section -->
-      <section class="firstSection">
-        <div class="leftSection">
-          <img src="pictures/profile_pic1.png" alt="" />
-        </div>
-        <div class="rightSection">
-          Hi, My name is <span class="purple"> Nisarg </span>
-          <div id="together">and</div>
-          <span id="element"></span>
-        </div>
-      </section>
 
-      <section class="secondSection">
-        <div class="buttons">
-          <button id="downloadButton">Download Resume!</button>
-        </div>
-        <div class="quick-links">
-          <ul>
+    <!-- hero section -->
+
+    <section class="home" id="home">
+      <!-- partical js  -->
+      <div id="particles-js"></div>
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm Nisarg <span>Patel</span>
+        </h2>
+        <p>Hello!! <span id="element"></span></p>
+        <a href="#about" class="btn">
+          <span
+            >About Me <i class="fa-solid fa-circle-arrow-down fa-bounce"></i
+          ></span>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
             <li>
-              <a href="https://www.linkedin.com/in/nisargpate/"
-                ><img src="pictures/LinkedIn.png" alt="Linkedin" class="links"
-              /></a>
+              <a
+                href="https://www.linkedin.com/in/nisargpate/"
+                class="linkedin"
+                alt="Linkedin"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </li>
             <li>
-              <a href="https://github.com/nisarg3322"
-                ><img src="pictures/github.png" alt="Github" class="links"
-              /></a>
+              <a
+                href="https://github.com/nisarg3322"
+                class="github"
+                alt="github"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </li>
             <li>
-              <a href="mailto:patelnisarg.3322@gmail.com"
-                ><img
-                  src="pictures/email.png"
-                  alt="Email"
-                  class="links"
-                  id="gmail"
-                />
-              </a>
+              <a
+                href="https://www.instagram.com/nick__1617"
+                class="instagram"
+                alt="Instagram"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:patelnisarg.3322@gmail.com"
+                class="Gmail"
+                alt="Gmail"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </li>
           </ul>
         </div>
-      </section>
-      <hr />
+      </div>
+      <div class="image">
+        <img
+          src="images/my_pic.png"
+          alt="profile pic"
+          draggable="false"
+          class="tilt"
+        />
+      </div>
+    </section>
+    <!-- hero section ends -->
 
-      <!-- Third Section about sectiona and programming skills sections -->
-
-      <!-- <section class="thirdSection">
-        <div class="heading"><h1>Nisarg.skills();</h1></div>
-        <div class="skillsContainer">
-          <div class="leftArea">left</div>
-          <div class="rightArea">right</div>
-        </div>
-      </section>
-
-      <hr /> -->
-
-      <!-- Forth Section About Education -->
-
-      <section class="fourthSection">
-        <div class="heading"><h1>Nisarg.education();</h1></div>
-
-        <div class="educationBox">
-          <div class="uottawa">
-            <div class="uniAndDate">
-              <div class="uniName"><h2>University Of Ottawa</h2></div>
-              <div><h2>09/2022 to 04/2026</h2></div>
-            </div>
-            <div class="courseName">
-              <h3>
-                Bachelor of Computer Engineering
-                <span class="purple">(9.1/10.0)</span>
-                CGPA
-              </h3>
-            </div>
-            <div class="uniDetails">
-              <div class="courseDetails">
-                <ul>
-                  <li>
-                    <p>
-                      Currently in second semester and advancing my knowledge in
-                      programing language such as Python, Java.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Practiced Java (OOP) concept such as, Abstraction,
-                      Encapsulation, Polymorphism, Inheritance.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Data Structures - Linked lists, stacks, queues, binary
-                      search trees.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Currently studying subjects in computer hardware, digital
-                      systems, computer electronics, Discrete Maths for
-                      Computing.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    <!-- About Me section start -->
+    <section class="about" id="about">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/about_me_edited.jpg"
+            alt="pic"
+            draggable="false"
+            class="tilt"
+          />
+          <div class="resumebtn">
+            <a href="" id="downloadButton" class="btn"
+              ><span>Resume</span> <i class="fa-solid fa-download fa-bounce"></i
+            ></a>
           </div>
-          <!-- Second Education for Cambrian College -->
-          <div class="cambrian">
-            <div class="uniAndDate">
-              <div class="uniName">
-                <h2>Cambrian College Of Applied Arts and Technology</h2>
-              </div>
-              <div><h2>09/2017 to 04/2019</h2></div>
-            </div>
-            <div class="courseName">
-              <h3>
-                Industrial Mechanical Millwright Technician
-                <span class="purple">(3.86/4.0)</span>
-                CGPA
-              </h3>
+        </div>
+
+        <div class="content">
+          <h3>I'm Nisarg</h3>
+          <h4>Full Stack Developer</h4>
+          <p class="details">
+            I'm Nisarg Patel, a highly motivated second-year Computer
+            Engineering student at the University of Ottawa with a
+            <span>9.1 CGPA</span>. My programming journey started with
+            <span>Java</span> and expanded to include
+            <span> Python, HTML, CSS, and JavaScript</span>. I'm skilled in both
+            front-end and back-end development, leveraging technologies like
+            <span>Node.js, Express, and MongoDB</span>.
+          </p>
+          <p class="details">
+            Currently, I'm crafting my <span>portfolio website</span> to
+            showcase my projects and achievements while highlighting my passion
+            for lifelong learning and self-improvement. Beyond
+            <span>web development</span>, I'm eager to explore the exciting
+            field of <span>Machine Learning</span> and its potential for
+            real-world problem-solving.
+          </p>
+          <p class="details">
+            <span>Internships</span> are a priority for me as they offer
+            valuable hands-on experience, a chance to collaborate with industry
+            professionals, and contribute to meaningful projects. I
+            <span>continuously seek opportunities</span>
+            to stay at the forefront of technology by adapting to new tools and
+            advancements.
+          </p>
+          <p class="details">
+            I'm determined to make a positive impact in the world of Computer
+            Engineering, and I'm open to connecting with like-minded individuals
+            and organizations to shape a promising tech-driven future.
+          </p>
+
+          <div class="box-container">
+            <div class="box">
+              <p>
+                <span>email: </span>
+                <a id="email" href="mailto:patelnisarg.3322@gmail.com"
+                  >patelnisarg.3322@gmail.com<i class="fa-solid fa-reply"></i
+                  ><i class="fa-solid fa-paper-plane-top"></i
+                ></a>
+              </p>
+              <p id="last"><span>place: </span> Ottawa, ON. Canada.</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- typed scipt imported from github repo -->
+    <!-- partical js links -->
+    <script src="./assets/partical_js/particles.js"></script>
+    <script src="./assets/partical_js/app.js"></script>
+
+    <!-- typed js cdn -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Welcome to my Portfolio.",
-          "I am a passionate Computer engineer.",
-          "Transforming Ideas into Tech.",
-        ],
-        typeSpeed: 70,
-        loop: true,
-      });
-    </script>
-    <script>
-      document
-        .getElementById("downloadButton")
-        .addEventListener("click", function () {
-          var link = document.createElement("a");
-          link.href = "assets/docs/resume.pdf";
-          link.download = "assets/docs/resume.pdf";
-          link.click();
-        });
-    </script>
-    <script src="./assets/js/particles.js"></script>
-    <script src="./assets/js/app.js"></script>
+
+    <!-- Tilt cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
