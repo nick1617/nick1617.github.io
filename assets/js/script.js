@@ -31,13 +31,6 @@ let typed = new Typed("#element", {
 
 // scroll REVEL animations//
 
-/* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
-  origin: 'top',
-  distance: '80px',
-  duration: 1000,
-  reset: true
-});
 
 // try the skills section
 async function fetchData(type = "skills") {
@@ -67,8 +60,16 @@ function showSkills(skills) {
 
 fetchData().then(data => {
   showSkills(data);
+  srtop.reveal('.skills .container .row .bar', {interval:50});
 });
 
+/* ===== SCROLL REVEAL ANIMATION ===== */
+const srtop = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 1000,
+  reset: true
+});
 
 // SCROLL HOME//
 srtop.reveal('.home', {delay:100});
@@ -86,4 +87,8 @@ srtop.reveal('.about .container a ', {delay:200});
 srtop.reveal('.about .content' , {interval:200})
 srtop.reveal('.about .content p', {interval:200});
 
+// skills section reveal//
+srtop.reveal('.skills', {delay: 100})
+srtop.reveal('.skills .heading', {delay:100})
+srtop.reveal('.skills .container', {delay:100})
 

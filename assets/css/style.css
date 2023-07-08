@@ -42,17 +42,23 @@ html::-webkit-scrollbar-thumb {
 section {
     min-height: 100vh;
     padding: 2rem 9%;
-    
+
 }
+
 
 .heading {
     font-size: 2.5rem;
     color: rgb(32, 32, 32);
     font-weight: 800;
     text-align: center;
-    
-}
+    margin-bottom: 10vh;
 
+}
+@media (max-width:500px){
+    .heading{
+        margin-bottom: 20px;
+    }
+}
 .heading span {
     color: rgb(115, 3, 167);
 }
@@ -132,7 +138,7 @@ header ul li a:hover {
         width: 80vw;
         height: 100vh;
         top: 10vh;
-        
+
         background-color: #0e0f31;
 
     }
@@ -161,16 +167,18 @@ header ul li a:hover {
 
     header .navbar ul li a.active,
     header .navbar ul li a:hover {
-       
+
 
         border-bottom: 0.25rem solid #011aff;
         border-radius: 3%;
         padding: 6px 0;
     }
-    .fa-times{
-        transform: rotate3d(1,1,1,360deg);
+
+    .fa-times {
+        transform: rotate3d(1, 1, 1, 360deg);
     }
-    header .navbar.nav-toggle{
+
+    header .navbar.nav-toggle {
         left: 20vw;
     }
 }
@@ -179,37 +187,39 @@ header ul li a:hover {
 
 /* hero section starts */
 
-.home{
+.home {
     position: relative;
     display: flex;
     min-height: 100vh;
     align-items: center;
-    
-   
+
+
 }
-.home #particles-js{
-    position:absolute;
+
+.home #particles-js {
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
 
-.home .content{
+.home .content {
     width: 50%;
     height: 100%;
-    
+
 }
+
 /* hero page - image start */
-.home .image{
+.home .image {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.home .image img{
-    
+.home .image img {
+
     height: 60%;
     width: 60%;
     border-radius: 50%;
@@ -217,25 +227,27 @@ header ul li a:hover {
     cursor: pointer;
     background: #F7F7F7;
 }
+
 .home .image img:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
+}
 
 /* left side content including h2 and typed js */
 
-.home .content h2{
+.home .content h2 {
     font-size: 3.5em;
     color: #002057;
     margin-bottom: 0.3em;
     z-index: 1;
 }
-.home .content h2 span{
+
+.home .content h2 span {
     color: #ff7b00;
     z-index: 1;
-    
+
 }
 
-.home .content p{
+.home .content p {
     color: 000;
     font-size: 1.5em;
     font-weight: 500;
@@ -243,14 +255,14 @@ header ul li a:hover {
     z-index: 1;
 }
 
-.home .content p span{
+.home .content p span {
     color: #940808;
     z-index: 1;
 }
 
 /* Btn of about me */
 
-.home .btn{
+.home .btn {
     padding: 1.1em 2.5em;
     background-color: #2506ad;
     box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
@@ -261,36 +273,40 @@ header ul li a:hover {
     position: relative;
 }
 
-.home .btn i{
+.home .btn i {
     margin-left: 0.3em;
     transition: 0.3s;
 }
-.home .btn span{
+
+.home .btn span {
     letter-spacing: 0.1em;
-    
+
 }
-.home .btn:hover{
+
+.home .btn:hover {
     background: #1a047e;
-    
+
 }
 
 /* social links */
-.home .content .socials ul{
+.home .content .socials ul {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     gap: 15px;
-    
+
 }
-.home .content ul li{
+
+.home .content ul li {
     z-index: 1;
     height: 2.7em;
     width: 2.7em;
-    
+
     margin-top: 2.5em;
-    
+
 }
-.home .content ul li a{
+
+.home .content ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,39 +319,45 @@ header ul li a:hover {
     text-decoration: none;
 }
 
-.home .content ul li a:hover{
+.home .content ul li a:hover {
     color: #fff;
     background-color: #0685da;
 }
-.content .socials .social-icons .instagram:hover{
+
+.content .socials .social-icons .instagram:hover {
     background-color: #ee00da;
 }
 
 
-@media (max-width: 1060px){
-    .home{
+@media (max-width: 1060px) {
+    .home {
         flex-direction: column;
-        
+
     }
-    .home .content h2{
-        font-size:2.5em ;
+
+    .home .content h2 {
+        font-size: 2.5em;
     }
-    .home .content p{
+
+    .home .content p {
         font-size: 1.2em;
         margin-bottom: 2em;
     }
-    .home .content{
+
+    .home .content {
         margin-top: 10vh;
         width: 80vw;
     }
-    .home .image img{
+
+    .home .image img {
         height: 400px;
         width: 400px;
         margin-top: 1.5em;
     }
 }
-@media (max-width: 500px){
-    .home .image img{
+
+@media (max-width: 500px) {
+    .home .image img {
         height: 300px;
         width: 300px;
     }
@@ -344,23 +366,22 @@ header ul li a:hover {
 
 /* About Me section starts */
 
-.about{
+.about {
     background-color: #fff;
 }
 
 /* about section starts */
-.heading{
-    margin-bottom: 10vh;
-}
-.about .container{
-    max-width: 100% ;
-    
+
+
+.about .container {
+    max-width: 100%;
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-.about .image{
+.about .image {
     width: 50%;
     height: 100%;
     display: flex;
@@ -368,96 +389,106 @@ header ul li a:hover {
     align-items: center;
     justify-content: center;
 }
-.about .content{
+
+.about .content {
     width: 50%;
     height: 100%;
 }
-.about .image img{
+
+.about .image img {
     height: 65%;
     width: 50%;
     margin-bottom: 80px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
-.about .container .btn{
+
+.about .container .btn {
     padding: 1.5em 3.2em;
-  border-radius: 0.5em;
-  transition: 0.2s;
-  color: #fff;
-  background: #2506ad;
-  font-size: 1.1em;
-  text-decoration: none;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    border-radius: 0.5em;
+    transition: 0.2s;
+    color: #fff;
+    background: #2506ad;
+    font-size: 1.1em;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
 }
 
-.about .container .btn span:hover{
+.about .container .btn span:hover {
     font-size: 1.5em;
- 
+
 }
 
-.about .container h3{
+.about .container h3 {
     font-size: 1.6em;
 
     color: rgb(27, 27, 27);
     margin-bottom: 5px;
 }
 
-.about .container h4{
+.about .container h4 {
     font-size: 1em;
     color: rgb(27, 27, 27);
     margin-bottom: 17px;
 }
 
-.about .content .details ,p{
+.about .content .details,
+p {
     margin-bottom: 17px;
     letter-spacing: 0.05em;
     line-height: 1.5;
     text-transform: none;
 }
-.about .content .details span{
-    color:#940808;
+
+.about .content .details span {
+    color: #940808;
     font-weight: 600;
     text-decoration: underline;
 }
-.about .container #last{
+
+.about .container #last {
     margin-bottom: 35px;
 }
 
 
-.about .content .box-container .box p span{
-    color: #011aff;   
+.about .content .box-container .box p span {
+    color: #011aff;
 }
-.about .content .box-container #email{
+
+.about .content .box-container #email {
     text-decoration: none;
-    color:#940808;
+    color: #940808;
     font-weight: 600;
     text-transform: none;
 }
 
-@media (max-width: 1060px){
-    .about .container{
-        flex-direction: column; 
+@media (max-width: 1060px) {
+    .about .container {
+        flex-direction: column;
         align-items: center;
 
     }
 
-    .about .container .image{
+    .about .container .image {
         width: 80%;
         margin-bottom: 3em;
-        
+
     }
-    .about .container .content{
+
+    .about .container .content {
         width: 80%;
     }
 }
-@media (max-width:500px){
-    
-    
-    .about .container .content p{
+
+@media (max-width:500px) {
+
+
+    .about .container .content p {
         font-size: 0.9em;
     }
+
     .about .container .image,
-    .about .container .content{
+    .about .container .content {
         width: 100%;
     }
 
@@ -465,19 +496,21 @@ header ul li a:hover {
 
 /* Skills section starts */
 
-.skills{
+.skills {
     background: linear-gradient(to bottom, #57059e, #4a00e0);
     min-height: 90vh;
 }
 
-.skills .heading{
+.skills .heading {
     color: #fff;
 }
-.skills .heading span{
-    color: rgb(255,230,0);
+
+.skills .heading span {
+    color: rgb(255, 230, 0);
 }
-.skills .container{
-    background-color: rgba(0,0,22,0.4);
+
+.skills .container {
+    background-color: rgba(0, 0, 22, 0.4);
     color: #fff;
     border-radius: 1em;
     padding: 2em;
@@ -486,73 +519,171 @@ header ul li a:hover {
     margin-top: 2em;
 }
 
-.skills .container .row{
+.skills .container .row {
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
 }
 
-.skills .container .row .bar{
-    
+.skills .container .row .bar {
+
     padding: 10px;
     border-radius: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: rgba(0,0,22,0.9);
-    
+    background: rgba(0, 0, 22, 0.9);
+
 }
 
-.skills .container .row .bar:hover{
-    
+.skills .container .row .bar:hover {
+
     box-shadow: 0 0px 40px #ff0000;
-    
+
     cursor: pointer;
 }
 
-.skills .container .bar .info{
+.skills .container .bar .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
-    
+
 }
 
-.skills .container .row .bar img{
+.skills .container .row .bar img {
     width: 90px;
-    
+
 }
 
-@media (max-width: 800px){
-    .skills .container .row{
+@media (max-width: 800px) {
+    .skills .container .row {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 626px){
-    .skills .container .row{
+@media (max-width: 626px) {
+    .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
     }
-    .skills .container .row .bar img{
+
+    .skills .container .row .bar img {
         width: 50px;
-        
+
     }
 }
 
-@media(max-width: 500px){
-    .skills .heading{
+@media(max-width: 500px) {
+    .skills .heading {
         margin-bottom: 20px;
-        
+
     }
-    .skills .container{
+
+    .skills .container {
         padding: 2em;
         width: 100%;
         margin: auto;
-        
+
     }
-    .skills .container .row .bar img{
+
+    .skills .container .row .bar img {
         width: 40px;
-        
+
     }
 }
 
+/* Education Section starts */
+
+.education {
+    background: #F7F7F7;
+    min-height: 80vh;
+}
+
+.education .box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.education .box-container .box {
+    display: flex;
+    margin: 1em 13%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.education .box-container .box .content {
+    margin-top: 20px;
+}
+
+.education .box-container .box .image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.education .box-container .box .image img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.education .box-container .box h3{
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #012970;
+    margin-bottom: 6px;
+}
+.education .box-container .box p{
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.education .box-container .box h4{
+    color: rgb(34,109,0);
+    font-size: 20px;
+}
+@media(max-width:1100px){
+    .education .box-container .box{
+        margin: 1em 8%
+    }
+}
+@media(max-width:931px){
+    .education .box-container .box{
+        margin: 1em 2%;
+    }
+    .education .box-container .box .image img{
+        width: 150px;
+    }
+
+}
+@media(max-width:500px){
+    .education .box-container .box{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .education .box-container .box .content{
+        
+        width: 92%;
+        margin-bottom: 20px;
+    }
+    
+    .education .box-container .box h3{
+        font-size: 1em;
+        
+    }
+    .education .box-container .box p{
+        font-size: 0.8em;
+    }
+    .education .box-container .box h4{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+}
