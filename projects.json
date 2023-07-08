@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Personal Portfolio",
+        "desc": "Personal portfolio using technologies like html css and js.",
+        "image": "portfolio",
+        "links": {
+          "view": "https://nisarg3322.github.io",
+          "code": "https://github.com/nisarg3322/nisarg3322.github.io" 
+        }  
+    }
+]

@@ -137,7 +137,7 @@ header ul li a:hover {
         left: 100vw;
         width: 80vw;
         height: 100vh;
-        top: 10vh;
+        top: 70px;
 
         background-color: #0e0f31;
 
@@ -686,4 +686,30 @@ p {
         margin-bottom: 10px;
     }
     
+}
+
+/* projects section */
+
+.projects{
+    background: linear-gradient(to bottom, #000031, #00002c);
+
+}
+.projects h2 {
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .projects .heading span {
+    color: rgb(255, 230, 0);
+  }
+.projects .box-container{
+    height: 200px;
+    width: 200px;
+}
+.project .box-container .box{
+    height: 80%;
+    width: 80%;
+}
+.projects .box-container .box img{
+    width: 100%;
 }

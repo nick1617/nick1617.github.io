@@ -10,11 +10,9 @@ function initial() {
   };
 }
 
-// tilt effect
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  max: 15,
-});
 
+
+//********************************************************** */
 // typed js
 
 let typed = new Typed("#element", {
@@ -29,10 +27,11 @@ let typed = new Typed("#element", {
   loop: true,
 });
 
-// scroll REVEL animations//
 
 
-// try the skills section
+
+//********************************************************** */
+// fetch json files depending on call value to function//
 async function fetchData(type = "skills") {
   let response
   type === "skills" ?
@@ -43,6 +42,8 @@ async function fetchData(type = "skills") {
   return data;
 }
 
+// *************************************************************//
+//Show skills 
 function showSkills(skills) {
   let skillsContainer = document.getElementById("skillsContainer");
   let skillHTML = "";
@@ -62,7 +63,49 @@ fetchData().then(data => {
   showSkills(data);
   srtop.reveal('.skills .container .row .bar', {interval:50});
 });
+//********************************************************** */
 
+//show projects//
+
+function showProjects(projects){
+  let projectsContainer = document.querySelector("#projects .box-container");
+  let projectHTML = "";
+  projects.forEach(project => {
+    projectHTML += `<div class="box tilt ">
+    <img draggable="false" src="./images/projects/${project.image}.jpg" alt="project" />
+      <div class="content">
+        <div class="tag">
+        <h3>${project.name}</h3>
+        </div>
+        <div class="desc">
+          <p>${project.desc}</p>
+          <div class="btns">
+            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    `
+    projectsContainer.innerHTML = projectHTML;
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+      max: 15,
+    });
+  })
+
+}
+
+fetchData("projects").then(data =>{
+  showProjects(data);
+})
+
+
+//********************************************************** */
+// tilt effect
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+//********************************************************** */
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
   origin: 'top',
@@ -92,3 +135,7 @@ srtop.reveal('.skills', {delay: 100})
 srtop.reveal('.skills .heading', {delay:100})
 srtop.reveal('.skills .container', {delay:100})
 
+//education section reveal/
+srtop.reveal('.education' , {delay:100})
+srtop.reveal('.education .heading' , {delay:200})
+srtop.reveal('.education .box-container .box' , {interval:100})
