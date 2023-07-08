@@ -1,0 +1,51 @@
+[
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/?size=512&id=20909&format=png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/?size=512&id=21278&format=png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/?size=512&id=tGvHBPJaKqEd&format=png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/?size=512&id=13679&format=png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/?size=512&id=l75OEUJkPAk4&format=png"
+    },
+    {
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/?size=512&id=54087&format=png"
+    },
+    {
+        "name": "Express.js",
+        "icon": "https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/?size=512&id=74402&format=png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/?size=512&id=84710&format=png"
+    },
+    {
+        "name": "REST API",
+        "icon": "https://img.icons8.com/?size=512&id=55497&format=png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/?size=512&id=20906&format=png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/?size=512&id=AZOZNnY73haj&format=png"
+    }
+
+]
