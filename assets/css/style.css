@@ -54,11 +54,13 @@ section {
     margin-bottom: 10vh;
 
 }
-@media (max-width:500px){
-    .heading{
+
+@media (max-width:500px) {
+    .heading {
         margin-bottom: 20px;
     }
 }
+
 .heading span {
     color: rgb(115, 3, 167);
 }
@@ -633,83 +635,201 @@ p {
     border-radius: 20px;
 }
 
-.education .box-container .box h3{
+.education .box-container .box h3 {
     font-size: 1.3em;
     font-weight: 800;
     color: #012970;
     margin-bottom: 6px;
 }
-.education .box-container .box p{
+
+.education .box-container .box p {
     font-weight: 500;
     font-style: italic;
     margin-bottom: 25px;
 }
-.education .box-container .box h4{
-    color: rgb(34,109,0);
+
+.education .box-container .box h4 {
+    color: rgb(34, 109, 0);
     font-size: 20px;
 }
-@media(max-width:1100px){
-    .education .box-container .box{
+
+@media(max-width:1100px) {
+    .education .box-container .box {
         margin: 1em 8%
     }
 }
-@media(max-width:931px){
-    .education .box-container .box{
+
+@media(max-width:931px) {
+    .education .box-container .box {
         margin: 1em 2%;
     }
-    .education .box-container .box .image img{
+
+    .education .box-container .box .image img {
         width: 150px;
     }
 
 }
-@media(max-width:500px){
-    .education .box-container .box{
+
+@media(max-width:500px) {
+    .education .box-container .box {
         flex-direction: column;
         align-items: center;
-        
+
     }
-    .education .box-container .box .content{
-        
+
+    .education .box-container .box .content {
+
         width: 92%;
         margin-bottom: 20px;
     }
-    
-    .education .box-container .box h3{
+
+    .education .box-container .box h3 {
         font-size: 1em;
-        
+
     }
-    .education .box-container .box p{
+
+    .education .box-container .box p {
         font-size: 0.8em;
     }
-    .education .box-container .box h4{
+
+    .education .box-container .box h4 {
         font-size: 1em;
         margin-bottom: 10px;
     }
-    
+
 }
 
 /* projects section */
 
-.projects{
+.projects {
     background: linear-gradient(to bottom, #000031, #00002c);
 
 }
+
 .projects h2 {
     color: #fff;
     padding: 1rem;
-  }
+}
 
-  .projects .heading span {
+.projects .heading span {
     color: rgb(255, 230, 0);
-  }
-.projects .box-container{
-    height: 200px;
-    width: 200px;
 }
-.project .box-container .box{
-    height: 80%;
-    width: 80%;
+
+.projects .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 2em;
 }
-.projects .box-container .box img{
+
+.projects .box-container .box {
+
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 20em;
+    width: 500px;
+}
+
+.projects .box-container .box img {
+    height: 100%;
     width: 100%;
+
+}
+
+.projects .box-container .box .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .box-container .box .content .tag {
+
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    padding-left: 1em;
+    background: #ffd900;
+}
+
+.projects .box-container .box .content .tag h3 {
+    font-size: 2rem;
+}
+
+.projects .box-container .box:hover .content {
+    top: 25%;
+}
+
+.projects .box-container .content .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 23px 15px;
+
+}
+
+.projects .box-container .content .desc .btns {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.projects .box-container .content .desc .btns a {
+
+    background-color: #00002c;
+    color: #F7F7F7;
+    padding: 15px 32px;
+    border-radius: 10px;
+}
+
+.projects .box-container .content .desc .btns .btn:hover {
+    background-color: #310ae0f5;
+}
+
+/* projects section ends */
+
+/* experience section start */
+.experience{
+    min-height: 80vh;
+}
+.experience .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.experience .box{
+    display: flex;
+    margin: 1em 13%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.experience .box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+.experience .box .content{
+    width: 100%;
+    padding: 30px 50px;
+}
+.experience .box .tag h2{
+    font-size: 1.7em;
+}
+.experience .box .tag{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience .box .desc{
+    font-style: italic;
 }
