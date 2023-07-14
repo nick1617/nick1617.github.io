@@ -8,7 +8,18 @@ function initial() {
     this.classList.toggle("fa-times");
     navbar[0].classList.toggle("nav-toggle");
   };
+
+  window.addEventListener('scroll', function(){
+    let scrollTop = document.querySelector('#scroll-top');
+  
+    if(window.scrollY > 60){
+      scrollTop.classList.add('active');
+    }else{
+      scrollTop.classList.remove('active');
+    }
+  });
 }
+
 
 
 
@@ -105,6 +116,16 @@ fetchData("projects").then(data =>{
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
   max: 15,
 });
+
+
+
+
+
+//********************************************************** */
+
+
+
+
 //********************************************************** */
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
