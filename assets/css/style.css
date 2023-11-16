@@ -10,6 +10,17 @@
 
 }
 
+body {
+    cursor: url('/images/icons8-select-cursor-48.png'), auto;
+}
+a {
+    cursor: url('/images/icons8-scroll-down-gesture-40.png'), pointer;
+  }
+
+img{
+    cursor: url('/images/icons8-scroll-down-gesture-40.png'),pointer;
+}
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
